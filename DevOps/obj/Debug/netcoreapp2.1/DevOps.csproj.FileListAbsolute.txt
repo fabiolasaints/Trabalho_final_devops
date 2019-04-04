@@ -1,0 +1,11 @@
+D:\Private\Pós\DevOps\DevOps\obj\Debug\netcoreapp2.1\DevOps.csprojAssemblyReference.cache
+D:\Private\Pós\DevOps\DevOps\obj\Debug\netcoreapp2.1\DevOps.csproj.CoreCompileInputs.cache
+D:\Private\Pós\DevOps\DevOps\obj\Debug\netcoreapp2.1\DevOps.AssemblyInfoInputs.cache
+D:\Private\Pós\DevOps\DevOps\obj\Debug\netcoreapp2.1\DevOps.AssemblyInfo.cs
+D:\Private\Pós\DevOps\DevOps\bin\Debug\netcoreapp2.1\DevOps.deps.json
+D:\Private\Pós\DevOps\DevOps\bin\Debug\netcoreapp2.1\DevOps.runtimeconfig.json
+D:\Private\Pós\DevOps\DevOps\bin\Debug\netcoreapp2.1\DevOps.runtimeconfig.dev.json
+D:\Private\Pós\DevOps\DevOps\bin\Debug\netcoreapp2.1\DevOps.dll
+D:\Private\Pós\DevOps\DevOps\bin\Debug\netcoreapp2.1\DevOps.pdb
+D:\Private\Pós\DevOps\DevOps\obj\Debug\netcoreapp2.1\DevOps.dll
+D:\Private\Pós\DevOps\DevOps\obj\Debug\netcoreapp2.1\DevOps.pdb
