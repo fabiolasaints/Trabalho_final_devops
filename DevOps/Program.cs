@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 namespace DevOps
 {
-    class Program
+    public class Program
     {
 
         /*
@@ -23,71 +23,39 @@ namespace DevOps
          */
 
 
-        class Rota
+        static void Main(string[] args)
+        {
+            List<Rota> caminho;
+            int numCidades = 5;
+            int custo = 0;
+            Grafo grafo;
+
+            Console.Write("JOÃO IRÁ PASSAR POR 5 CIDADES EM SUA VIAGEM. SEU GASTO DE UMA CIDADE A OUTRA PODE SER VISTA NOS DADOS ABAIXO ");
+            CaixeiroGuloso.montaGrafo(out grafo, numCidades);
+            caminho = new List<Rota>(numCidades);
+            Console.WriteLine("\n");
+            Console.Write("ESCOLHA UMA DAS CIDADES (A, B, C, D, E) PARA JOÃO INICIAR SUA JORNADA: ");
+            int cidadeInicial = CaixeiroGuloso.retornaCidadeNum(Console.ReadLine().ToString());
+            Console.WriteLine("\n");
+            CaixeiroGuloso.encontraCaminho(grafo, caminho, cidadeInicial, ref custo);
+            CaixeiroGuloso.imprimeCaminho(custo, caminho);
+            Console.ReadKey();
+        }
+
+        public class Rota
         {
             public int cidade1, cidade2, custo;
         }
 
-        class Grafo
+        public class Grafo
         {
             public int[,] M;
         }
 
-        
-
-        class CaixeiroGuloso
+        public static class CaixeiroGuloso
         {
-            static void Main(string[] args)
-            {
-                List<Rota> caminho;
-                int numCidades = 5;
-                int custo = 0;
-                CaixeiroGuloso caixeiro = new CaixeiroGuloso();
-                Grafo grafo;
 
-                Console.Write("JOÃO IRÁ PASSAR POR 5 CIDADES EM SUA VIAGEM. SEU GASTO DE UMA CIDADE A OUTRA PODE SER VISTA NOS DADOS ABAIXO ");
-                caixeiro.montaGrafo(out grafo, numCidades);
-                caminho = new List<Rota>(numCidades);
-                Console.WriteLine("\n");
-                Console.Write("ESCOLHA UMA DAS CIDADES (A, B, C, D, E) PARA JOÃO INICIAR SUA JORNADA: ");
-                int cidadeInicial = retornaCidadeNum(Console.ReadLine().ToString());
-                Console.WriteLine("\n");
-                caixeiro.encontraCaminho(grafo, caminho, cidadeInicial, ref custo);
-                caixeiro.imprimeCaminho(custo, caminho);
-                Console.ReadKey();
-            }
-
-            void montaGrafo(out Grafo grafo, int numCidades)
-            {
-                grafo = new Grafo();
-                grafo.M = new int[5, 5];
-
-                for (int i = 0; i < 5; i++)
-                {
-                    for (int j = 0; j < 5; j++)
-                    {
-                        if (i < j)
-                            grafo.M[i, j] = distancia(i, j);
-                        else
-                            if (i == j)
-                            grafo.M[i, j] = distancia(i, j);
-                        else
-                            grafo.M[i, j] = distancia(i, j);
-                    }
-                }
-
-                Console.WriteLine();
-                Console.WriteLine();
-                for (int i = 0; i < numCidades; i++)
-                {
-                    for (int j = 0; j < numCidades; j++)
-                        Console.Write(retornaCidade(i) + retornaCidade(j) + " = " + grafo.M[i, j] + " | ");
-
-                    Console.WriteLine();
-                }
-            }
-
-            private int distancia(int cidade1, int cidade2)
+            public static int distancia(int cidade1, int cidade2)
             {
                 if ((cidade1 == 0 && cidade2 == 1) || (cidade1 == 1 && cidade2 == 0))
                     return 185;
@@ -116,7 +84,7 @@ namespace DevOps
                 return 0;
             }
 
-            private string retornaCidade(int cidade)
+            public static string retornaCidade(int cidade)
             {
                 switch (cidade)
                 {
@@ -135,7 +103,7 @@ namespace DevOps
                 }
             }
 
-            private static int retornaCidadeNum(string cidade)
+            public static int retornaCidadeNum(string cidade)
             {
                 switch (cidade)
                 {
@@ -154,7 +122,7 @@ namespace DevOps
                 }
             }
 
-            void encontraCaminho(Grafo grafo, List<Rota> caminho, int cidadeInicial, ref int custo)
+            public static void encontraCaminho(Grafo grafo, List<Rota> caminho, int cidadeInicial, ref int custo)
             {
                 int i;
                 int cid1 = cidadeInicial;
@@ -202,7 +170,7 @@ namespace DevOps
                 }
             }
 
-            void imprimeCaminho(int custo, List<Rota> melhorRota)
+            public static void imprimeCaminho(int custo, List<Rota> melhorRota)
             {
                 Console.WriteLine("\n\nO O CUSTO PARA A VIAGEM SAINDO DA CIDADE ESCOLHIDA É: " + custo);
                 Console.WriteLine("\n\nSENDO ESTE O MELHOR TRAJETO");
@@ -210,9 +178,37 @@ namespace DevOps
                 foreach (Rota rota in melhorRota)
                     Console.Write("              " + retornaCidade(rota.cidade1) + "                  " + retornaCidade(rota.cidade2) + "                " + rota.custo + "\n");
                 Console.WriteLine("\n");
-            } 
+            }
 
-            
+            public static void montaGrafo(out Grafo grafo, int numCidades)
+            {
+                grafo = new Grafo();
+                grafo.M = new int[5, 5];
+
+                for (int i = 0; i < 5; i++)
+                {
+                    for (int j = 0; j < 5; j++)
+                    {
+                        if (i < j)
+                            grafo.M[i, j] = distancia(i, j);
+                        else
+                            if (i == j)
+                            grafo.M[i, j] = distancia(i, j);
+                        else
+                            grafo.M[i, j] = distancia(i, j);
+                    }
+                }
+
+                Console.WriteLine();
+                Console.WriteLine();
+                for (int i = 0; i < numCidades; i++)
+                {
+                    for (int j = 0; j < numCidades; j++)
+                        Console.Write(retornaCidade(i) + retornaCidade(j) + " = " + grafo.M[i, j] + " | ");
+
+                    Console.WriteLine();
+                }
+            }
 
 
         }
