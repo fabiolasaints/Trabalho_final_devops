@@ -688,23 +688,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kyrla.nunes\\.nuget\\packages\\": {},
+    "C:\\Users\\kyrla\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Private\\Pós\\DevOps\\DevOps\\DevOps.csproj",
+      "projectUniqueName": "K:\\PUC\\DEVOPS\\Trabalho_final_devops\\DevOps\\DevOps.csproj",
       "projectName": "DevOps",
-      "projectPath": "D:\\Private\\Pós\\DevOps\\DevOps\\DevOps.csproj",
-      "packagesPath": "C:\\Users\\kyrla.nunes\\.nuget\\packages\\",
-      "outputPath": "D:\\Private\\Pós\\DevOps\\DevOps\\obj\\",
+      "projectPath": "K:\\PUC\\DEVOPS\\Trabalho_final_devops\\DevOps\\DevOps.csproj",
+      "packagesPath": "C:\\Users\\kyrla\\.nuget\\packages\\",
+      "outputPath": "K:\\PUC\\DEVOPS\\Trabalho_final_devops\\DevOps\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\kyrla.nunes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kyrla\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

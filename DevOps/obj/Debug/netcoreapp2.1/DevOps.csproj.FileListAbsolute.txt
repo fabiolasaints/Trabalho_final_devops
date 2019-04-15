@@ -9,3 +9,15 @@ D:\Private\Pós\DevOps\DevOps\bin\Debug\netcoreapp2.1\DevOps.dll
 D:\Private\Pós\DevOps\DevOps\bin\Debug\netcoreapp2.1\DevOps.pdb
 D:\Private\Pós\DevOps\DevOps\obj\Debug\netcoreapp2.1\DevOps.dll
 D:\Private\Pós\DevOps\DevOps\obj\Debug\netcoreapp2.1\DevOps.pdb
+K:\PUC\DEVOPS\Trabalho_final_devops\DevOps\bin\Debug\netcoreapp2.1\DevOps.deps.json
+K:\PUC\DEVOPS\Trabalho_final_devops\DevOps\bin\Debug\netcoreapp2.1\DevOps.runtimeconfig.json
+K:\PUC\DEVOPS\Trabalho_final_devops\DevOps\bin\Debug\netcoreapp2.1\DevOps.runtimeconfig.dev.json
+K:\PUC\DEVOPS\Trabalho_final_devops\DevOps\bin\Debug\netcoreapp2.1\DevOps.dll
+K:\PUC\DEVOPS\Trabalho_final_devops\DevOps\bin\Debug\netcoreapp2.1\DevOps.pdb
+K:\PUC\DEVOPS\Trabalho_final_devops\DevOps\obj\Debug\netcoreapp2.1\DevOps.csprojAssemblyReference.cache
+K:\PUC\DEVOPS\Trabalho_final_devops\DevOps\obj\Debug\netcoreapp2.1\DevOps.csproj.CoreCompileInputs.cache
+K:\PUC\DEVOPS\Trabalho_final_devops\DevOps\obj\Debug\netcoreapp2.1\DevOps.AssemblyInfoInputs.cache
+K:\PUC\DEVOPS\Trabalho_final_devops\DevOps\obj\Debug\netcoreapp2.1\DevOps.AssemblyInfo.cs
+K:\PUC\DEVOPS\Trabalho_final_devops\DevOps\obj\Debug\netcoreapp2.1\DevOps.dll
+K:\PUC\DEVOPS\Trabalho_final_devops\DevOps\obj\Debug\netcoreapp2.1\DevOps.pdb
+K:\PUC\DEVOPS\Trabalho_final_devops\DevOps\bin\Debug\netcoreapp2.1\DevOps.dll.config
